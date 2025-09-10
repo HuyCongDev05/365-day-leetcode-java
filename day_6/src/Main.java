@@ -38,7 +38,6 @@ public class Main {
                     }
                 }
 
-                // Ghép string
                 String str = "";
                 for (String out : arr1) {
                     str += out;
