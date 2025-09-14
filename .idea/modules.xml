@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/365_day_leetcode.iml" filepath="$PROJECT_DIR$/.idea/365_day_leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_1/day_1.iml" filepath="$PROJECT_DIR$/day_1/day_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_10/day_10.iml" filepath="$PROJECT_DIR$/day_10/day_10.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_2/day_2.iml" filepath="$PROJECT_DIR$/day_2/day_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_3/day_3.iml" filepath="$PROJECT_DIR$/day_3/day_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/day_4/day_4.iml" filepath="$PROJECT_DIR$/day_4/day_4.iml" />
