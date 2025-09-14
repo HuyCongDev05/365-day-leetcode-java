@@ -23,6 +23,6 @@ public class Main {
             }
         }
         Solution s = new Solution();
-        System.out.println(s.isSubsequence("axc","ahbgdc"));
+        System.out.println(s.isSubsequence("abc","ahbgdc"));
     }
 }
