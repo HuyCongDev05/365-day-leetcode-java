@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /*
  + Example 1:
     Input: s = "abc", t = "ahbgdc"
@@ -10,19 +14,17 @@ public class day_10 {
     public static void main(String[] args) {
         class Solution {
             public boolean isSubsequence(String s, String t) {
-                int index = 0;
-                for (char char1 : s.toCharArray()) {
-                    for (char char2 : t.toCharArray()) {
-                        if (char1 == char2){
-                            index++;
-                            break;
-                        }
-                    }
+                int i = 0, j = 0;
+                while(i < s.length() && j < t.length()) {
+                    if(s.charAt(i) == t.charAt(j)) {
+                        i++;
+                        j++;
+                    }else j++;
                 }
-                return index == s.length();
+                return i == s.length();
             }
         }
         Solution s = new Solution();
-        System.out.println(s.isSubsequence("abc","ahbgdc"));
+        System.out.println(s.isSubsequence("acb","ahbgdc"));
     }
 }
