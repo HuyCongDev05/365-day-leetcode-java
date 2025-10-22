@@ -16,16 +16,17 @@ public class day_9 {
     public static void main(String[] args) {
         class Solution {
             public boolean increasingTriplet(int[] nums) {
-                boolean check = false;
-                for (int i = 0; i < nums.length - 2; i++) {
-                    if (nums[i] < nums[i+1] && nums[i+1] < nums[i + 2]) {
-                        return true;
-                    }else check = false;
+                int first = Integer.MAX_VALUE,second = Integer.MAX_VALUE;
+                for (int num : nums) {
+                    if (num <= first)  first = num;
+                    else if (num <= second) {
+                        second = num;
+                    } else return true;
                 }
-                return check;
+                return false;
             }
         }
         Solution s = new Solution();
-        System.out.println(s.increasingTriplet(new int[] {20,100,10,12,5,13}));
+        System.out.println(s.increasingTriplet(new int[] {0,4,2,1,0,-1,-3}));
     }
 }
